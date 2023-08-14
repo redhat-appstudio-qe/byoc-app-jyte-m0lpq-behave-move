@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: wnck
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-vagc-tenant/byoc-app-jyte/wnck@sha256:9327afd4a67dd8bcf86ada737195af9ced4d647aa529d6adf601f43279c6ebce
+        name: my-java-quarkus
+        resources: {}
+status: {}
