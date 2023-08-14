@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: wnck
     spec:
       containers:
-      - image: java-quarkus-image:latest
+      - image: quay.io/redhat-appstudio-qe/byoc-vagc-tenant/byoc-app-jyte/wnck@sha256:9327afd4a67dd8bcf86ada737195af9ced4d647aa529d6adf601f43279c6ebce
         name: my-java-quarkus
         ports:
         - containerPort: 8081
